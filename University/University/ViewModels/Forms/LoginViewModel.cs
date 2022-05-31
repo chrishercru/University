@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace University.ViewModels.Forms
 {
@@ -27,9 +28,8 @@ namespace University.ViewModels.Forms
 
                 if(response.IsSuccessStatusCode)
 
-                {
-
-                    //TODO: Logic APP
+                {       //TODO: Logic APP
+                    await Application.Current.MainPage.DisplayAlert("Notify", "Login OK", "Cancel");
                 }
 
                 var statusCode = response.StatusCode;
