@@ -28,7 +28,7 @@ namespace University.ViewModels.Forms
 
                 if(response.IsSuccessStatusCode)
 
-                {       //TODO: Logic APP
+                {       //TODO: logic APP
                     await Application.Current.MainPage.DisplayAlert("Notify", "Login OK", "Cancel");
                 }
 
