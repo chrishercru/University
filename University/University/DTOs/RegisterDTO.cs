@@ -5,23 +5,23 @@ using System.Text;
 
 namespace University.DTOs
 {
-    public class LoginReqDTO
+    public class RegisterReqDTO
     {
         [JsonProperty("email")]
         public string Email { get; set; }
 
         [JsonProperty("password")]
-        public string Password { get; set; }
+        public string password { get; set; }
 
     }
 
-    public class LoginResDTO
+    public class RegisterResDTO
     {
         [JsonProperty("token")]
         public string Token { get; set; }
     }
 
-    public class LoginResFailDTO
+    public class RegisterResFailDTO
     {
         [JsonProperty("error")]
         public string Error
